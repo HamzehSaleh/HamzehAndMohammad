@@ -22,58 +22,38 @@ public class AddBookSteps {
 	
 	@Given("Admin logged in and have the information for the book")
 	public void admin_logged_in_and_have_the_information_for_the_book() {
-	    // Write code here that turns the phrase above into concrete actions
-	 //   throw new io.cucumber.java.PendingException();
+	 
 		flag = true ;
 		assertTrue(log.islogIn(flag));
 		
 	}
 
-	@When("he entered the title")
-	public void he_entered_the_title() {
-	    // Write code here that turns the phrase above into concrete actions
-	    //throw new io.cucumber.java.PendingException();
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("please enter the title: ");
-		String s1 = scanner.nextLine() ;
-		newBook.setTitle(s1);
+	@When("he entered the title {string}" )
+	public void he_entered_the_title(String title) {
+	  	
+		newBook.setTitle(title);
 	}
 
-	@When("he entered the auther")
-	public void he_entered_the_auther() {
-	    // Write code here that turns the phrase above into concrete actions
-	  //  throw new io.cucumber.java.PendingException();
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("please enter the ayther: ");
-		String s1 = scanner.nextLine() ;
-		newBook.setAuther(s1);
+	@When("he entered the auther {string}")
+	public void he_entered_the_auther(String author) {
+	
+		newBook.setAuther(author);
 	}
 
-	@When("he entered the sign")
-	public void he_entered_the_sign() {
-	    // Write code here that turns the phrase above into concrete actions
-	   // throw new io.cucumber.java.PendingException();
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("please enter the signuter: ");
-		String s1 = scanner.nextLine() ;
-		newBook.setSign(s1);
+	@When("he entered the sign {string}")
+	public void he_entered_the_sign(String sign) {
+	
+		newBook.setSign(sign);
 	}
 
-	@When("he entered the isbn")
-	public void he_entered_the_isbn() {
-	    // Write code here that turns the phrase above into concrete actions
-	    //throw new io.cucumber.java.PendingException();
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("please enter the ISBN: ");
-		String s1 = scanner.nextLine() ;
-		newBook.setIsbn(s1);
+	@When("he entered the isbn {string}")
+	public void he_entered_the_isbn(String isbn) {	  
+		newBook.setIsbn(isbn);
 	}
 
 	@Then("the book is added")
 	public void the_book_is_added() {
-	    // Write code here that turns the phrase above into concrete actions
-	  //  throw new io.cucumber.java.PendingException();
-
+	  
 		System.out.println(newBook.getTitle());
 		System.out.println(newBook.getAuther());
 		System.out.println(newBook.getSign());

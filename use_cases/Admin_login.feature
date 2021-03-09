@@ -20,8 +20,7 @@
 Feature: LogIn
 
 @tag1
- 
-  Scenario Outline: Admin can log in with valid credentails
+ Scenario Outline: Admin can log in with valid credentails
     Given I have the username <username>
     And I have the password <password>
     When I check if the user name and password are correct 
@@ -31,9 +30,9 @@ Feature: LogIn
     Examples: 
       | username | password |
       | "hamzeh" |     "hhh"| 
+   
       
       @tag2
-      
       Scenario Outline: Admin has the wrong password
        Given I have the username but i have a wrong password 
     When I check if the password <password> is wrong 

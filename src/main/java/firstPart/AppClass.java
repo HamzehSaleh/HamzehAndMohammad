@@ -7,10 +7,13 @@ public class AppClass {
 String user , pass ;
 	
 	public String inputUser(String s1 ) {
+	
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("please enter your username: ");
 	    s1 = scanner.nextLine() ;
-	    user = s1 ;
+	    
+		
+	   // user = s1 ;
 	    return s1 ;
 	    
 	}

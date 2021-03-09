@@ -16,16 +16,21 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-
 @tag
 Feature: Adding a new book 
 
 @tag1 
-
  Scenario Outline: logged in admin wants to add a book 
  Given Admin logged in and have the information for the book 
- When he entered the title 
- And he entered the auther 
- And he entered the sign 
- And he entered the isbn 
+ When he entered the title <title>
+ And he entered the auther <author>
+ And he entered the sign <sign>
+ And he entered the isbn <isbn>
  Then the book is added 
+ 
+ 
+  Examples: 
+      | title | author |  sign | isbn| 
+      | "Data" | "NoOne"| "10" |  "12345"| 
+     
+ 
