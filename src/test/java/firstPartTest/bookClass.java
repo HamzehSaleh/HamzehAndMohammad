@@ -2,7 +2,7 @@ package firstPartTest;
 
 public class bookClass {
 	String title ;
-	String auther ;
+	String author ;
 	String sign ;
 	String isbn ;
 	
@@ -13,10 +13,10 @@ public class bookClass {
 		this.title = title;
 	}
 	public String getAuther() {
-		return auther;
+		return author;
 	}
-	public void setAuther(String auther) {
-		this.auther = auther;
+	public void setAuther(String author) {
+		this.author = author;
 	}
 	public String getSign() {
 		return sign;
