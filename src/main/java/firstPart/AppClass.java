@@ -31,4 +31,10 @@ String user , pass ;
 		
 		System.out.println("not valid password");
 	}
+	
+	public boolean islogIn(boolean log ){
+		 
+		return log ;
+	}
+	
 }
