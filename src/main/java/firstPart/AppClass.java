@@ -20,7 +20,7 @@ String user , pass ;
 	
 	public String inputPass(String s2) {
 	
-		// MOHAMMD 
+		
 	
 		// System.out.print("please enter your password: ");
 		//    s2 = scanner.nextLine();
