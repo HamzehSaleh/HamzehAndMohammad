@@ -15,33 +15,44 @@ public class SearchSteps {
 
 ArrayList<bookClass> bookArray = new ArrayList<bookClass>(); 
 
-bookClass Book1  = new bookClass("Data","Mohammad","10","12345");
-bookClass Book2 = new bookClass("Algo","Hamzeh","11","12346");
-bookClass Book3 = new bookClass("C++","Haya ","12","12347");
+//bookClass Book1  = new bookClass("Data","Mohammad","10","12345");
+//bookClass Book2 = new bookClass("Algo","Hamzeh","11","12346");
+//bookClass Book3 = new bookClass("C++","Haya ","12","12347");
+   
 
+   String []title_array = {"Data","Algo","C++"};
+   String []author = {"Mohammad","Hamzeh","Haya"};
+   String []sign = {"10","12","13"};
+   String []isbn = {"12345","12346","12347"};
+  
 
-
-
-
-	//bookClass Book4; 
-	
 
 	
 	@Given("Admin without logged in and have the title for the book")
 	public void admin_without_logged_in_and_have_the_title_for_the_book() {
 	    
+		System.out.println(" Test  in 1 ");
 	}
 
 	@When("he entered the title as {string}")
-	public void he_entered_the_title_as(String string) {
+	public void he_entered_the_title_as(String title ) {
 	   
+		System.out.println(" Test in 2   ");
 		
+		
+		int k=0 ;
+		for (int i=0; i<3 ;i++) {
+			if (title_array[i].equals(title))
+				k=i ;
+			
+		}
+		System.out.println(" Test   ... " +title_array[k]+" "+ author[k]+"  "+sign[k]+"  "+isbn[k]+"  ");
 		
 	}
 
 	@Then("the book info will display by title")
 	public void the_book_info_will_display_by_title() {
-	  
+		System.out.println(" Test in 3  ");
 	}
 
 	

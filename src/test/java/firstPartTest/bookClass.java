@@ -1,5 +1,7 @@
 package firstPartTest;
 
+import java.util.ArrayList;
+
 public class bookClass {
 	private String title ;
 	private String author ;
@@ -49,4 +51,9 @@ public class bookClass {
 	public void setIsbn(String isbn) {
 		this.isbn = isbn;
 	}
+	
+    //public void ArrayFill(bookClass book , ArrayList<bookClass> bookArray)
+ //  {
+    //	bookArray.add(book);
+   // }
 }

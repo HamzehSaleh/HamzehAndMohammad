@@ -19,7 +19,7 @@
 @tag
 Feature: Serach book 
 @tag1 
-Scenario Outline: logged in admin wants to search about substring of the title 
+Scenario Outline: without logged  in admin wants to search about substring of the title 
 Given Admin without logged in and have the title for the book  
  When he entered the title <title>
  Then the book info will display by title 
@@ -30,7 +30,7 @@ Given Admin without logged in and have the title for the book
       | "Data" |
       
    @tag2   
-      Scenario Outline: logged in admin wants to search about substring of the author 
+      Scenario Outline: without logged in admin wants to search about substring of the author 
 Given Admin without logged in and have the author for the book  
  When he entered the author <author>
  Then the book info will display by author 
@@ -43,7 +43,7 @@ Given Admin without logged in and have the author for the book
       
       
       @tag3   
-      Scenario Outline: logged in admin wants to search about substring of the isbn 
+      Scenario Outline: without logged in admin wants to search about substring of the isbn 
 Given Admin without logged in and have the isbn for the book  
  When he entered the isbn <isbn>
  Then the book info will display by isbn
