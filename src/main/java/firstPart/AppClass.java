@@ -9,7 +9,7 @@ String user , pass ;
 	public String inputUser(String s1 ) {
 	
 		//Scanner scanner = new Scanner(System.in);
-		//System.out.print("please enter your username: ");
+	
 	   // s1 = scanner.nextLine() ;
 	    
 		
@@ -19,9 +19,9 @@ String user , pass ;
 	}
 	
 	public String inputPass(String s2) {
-	//	Scanner scanner = new Scanner(System.in);
-	//	Scanner scanner = new Scanner(System.in);
-		//Scanner scanner = new Scanner(System.in);
+	
+		// MOHAMMD 
+	
 		// System.out.print("please enter your password: ");
 		//    s2 = scanner.nextLine();
 		 //   pass = s2 ;
