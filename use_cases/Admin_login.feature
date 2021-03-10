@@ -32,6 +32,7 @@ Feature: LogIn
       | "hamzeh" |     "hhh"| 
       | "mohammad" |     "123"|
       | "haya" |     "haya"|
+      | "jihad" |     "123"|
    
       
       @tag2
