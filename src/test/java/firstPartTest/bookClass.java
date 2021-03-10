@@ -1,11 +1,30 @@
 package firstPartTest;
 
 public class bookClass {
-	String title ;
-	String author ;
-	String sign ;
-	String isbn ;
+	private String title ;
+	private String author ;
+	private String sign ;
+	private String isbn ;
 	
+
+	
+  public bookClass()
+  {
+	  
+  }
+
+
+	
+  public bookClass(String title ,String author ,String sign ,String isbn )
+  {
+	  this.title=title ;
+	  this.author=author ;
+	  this.sign=sign; 
+	  this.isbn =isbn ; 
+	  
+  }
+
+
 	public String getTitle() {
 		return title;
 	}

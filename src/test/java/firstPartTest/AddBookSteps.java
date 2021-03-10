@@ -10,11 +10,17 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+
+
 public class AddBookSteps {
 	ArrayList<bookClass> bookArray = new ArrayList<bookClass>(); 
-	bookClass newBook = new bookClass();
+	
+	 bookClass newBook = new bookClass();
+	
 	AppClass log = new AppClass() ;
 	boolean flag = false ;
+	
+	
 	
 	public AddBookSteps( bookClass b1) {
 		newBook = b1 ;

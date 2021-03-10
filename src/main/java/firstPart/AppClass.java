@@ -6,6 +6,13 @@ public class AppClass {
 
 String user , pass ;
 	
+
+
+public AppClass (){
+		
+	}
+
+
 	public String inputUser(String s1 ) {
 	
 		//Scanner scanner = new Scanner(System.in);
