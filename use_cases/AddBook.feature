@@ -33,4 +33,11 @@ Feature: Adding a new book
       | title | author |  sign | isbn| 
       | "Data" | "NoOne"| "10" |  "12345"| 
      
- 
+     
+    @tag2
+      Scenario: Add a book when the admin is not logged in 
+      Given the admin is not logged in 
+      When the admin try to add book 
+      Then book does not added    
+      
+    

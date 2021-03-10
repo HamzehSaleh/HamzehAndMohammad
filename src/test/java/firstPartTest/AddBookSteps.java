@@ -62,4 +62,25 @@ public class AddBookSteps {
 	
 		System.out.println("the book added");
 	}
+	
+	@Given("the admin is not logged in")
+    public void the_admin_is_not_logged_in() {
+        // Write code here that turns the phrase above into concrete actions
+       // throw new io.cucumber.java.PendingException();
+
+    }
+
+    @When("the admin try to add book")
+    public void the_admin_try_to_add_book() {
+        // Write code here that turns the phrase above into concrete actions
+      //  throw new io.cucumber.java.PendingException();
+
+    }
+
+    @Then("book does not added")
+    public void book_does_not_added() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+	
+}
 }

@@ -30,6 +30,8 @@ Feature: LogIn
     Examples: 
       | username | password |
       | "hamzeh" |     "hhh"| 
+      | "mohammad" |     "123"|
+      | "haya" |     "haya"|
    
       
       @tag2

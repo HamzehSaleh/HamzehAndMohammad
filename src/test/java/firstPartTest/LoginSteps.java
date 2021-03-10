@@ -17,6 +17,8 @@ public class LoginSteps {
 	
 	public AppClass log;
 	public static String user , pass , s;
+
+	AdminInfo admin = new AdminInfo();
 	
 	public LoginSteps(AppClass log2) {
 		log = log2 ;
@@ -31,8 +33,8 @@ public class LoginSteps {
 		//user=  log.inputUser(username);  
 		
 		user = username ;
-	//	System.out.println("+++ " +user);
-		
+		System.out.println("+++ " +user);
+		admin.setUser_name(username);
 	}
 
 	
@@ -43,38 +45,26 @@ public class LoginSteps {
 	  
 		//pass= log.inputPass(password);
 		pass = password ;
-		//System.out.println("+++ " +pass);
+		System.out.println("+++ " +pass);
+		admin.setPassword(password);
 	}
 
 	String []user_n = {"hamzeh","mohammad","haya"};
 	String []pass_n = {"hhh","123","haya"};
 	
 	
-	
-	
 	@When("I check if the user name and password are correct")
 	public void i_check_if_the_user_name_and_password_are_correct() {
-	    // Write code here that turns the phrase above into concrete actions
-	   // throw new io.cucumber.java.PendingException();
-		//for(int i=0 ;i<3 ;i++) {
-		
-		assertTrue(user.equalsIgnoreCase(user_n[0]));
-		assertTrue(pass.equalsIgnoreCase(pass_n[0])) ;
+	 
+		assertTrue(user.equalsIgnoreCase(admin.getUser_name()));
+		assertTrue(pass.equalsIgnoreCase(admin.getPassword())) ;
 	
-		
-		//System.out.println("in loop  " +user_n[i]+ "  " + user);
-		//System.out.println("in loop " +pass_n[i]+"  " + pass);
-	//	}
-		
 	}
-	
-	
-	
-	
 	
 	@Then("I have logged in")
 	public void i_have_logged_in() {
 	log.checkout();
+	
 	}
 	
 	//////////////////////
