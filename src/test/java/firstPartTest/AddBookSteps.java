@@ -16,10 +16,7 @@ public class AddBookSteps {
 	bookClass newBook = new bookClass();
 	AppClass log = new AppClass() ;
 	boolean flag = false ;
-	
-//	public AddBookSteps( bookClass b1) {
-//		newBook = b1 ;
-//	}
+
 	
 	@Given("Admin logged in and have the information for the book")
 	public void admin_logged_in_and_have_the_information_for_the_book() {

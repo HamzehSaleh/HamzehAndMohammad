@@ -22,13 +22,7 @@ public class LogoutSteps {
 
 	@When("The admin choose to log out")
 	public void the_admin_choose_to_log_out() {
-		// Write code here that turns the phrase above into concrete actions
-		//throw new io.cucumber.java.PendingException();
-		String s ;
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("are you sure thant you want to logout?(yes,no)");
-		s = scanner.nextLine() ;
-		
+	
 	}
 
 	@Then("logout successfully done")

@@ -27,7 +27,7 @@ Given Not Logged in and have the title for the book
  
   Examples: 
       | title |
-      | "Data" |
+      | "Da" |
       
    @tag2   
       Scenario Outline: Not logged in and wants to search about substring of the author 
@@ -38,7 +38,7 @@ Given Not logged in and have the author for the book
  
   Examples: 
       | author |
-      | "hamzeh" |
+      | "hamz" |
       
       
       
@@ -51,7 +51,7 @@ Given Not logged in and have the isbn for the book
  
   Examples: 
       | isbn |
-      | "25" |
+      | "12347" |
       
       
        @tag4   
@@ -66,6 +66,7 @@ Given Admin with logged in and have any info for the book
       | "12345" |
       
       
+      
        @tag5   
       Scenario Outline: logged in admin wants to search about book and no match 
 Given Admin with logged in and have any info for the book and no match 
@@ -75,7 +76,7 @@ Given Admin with logged in and have any info for the book and no match
  
   Examples: 
       | any_info_no_match |
-      | "12345" |
+      | "12348" |
       
       
        @tag6   
@@ -88,3 +89,8 @@ Given Admin with logged in and have any info for  more than one  book
   Examples: 
       | any_info_many_books |
       | "12345" |
+      | "Mohammad" |
+       | "Algo" |
+      
+      
+      

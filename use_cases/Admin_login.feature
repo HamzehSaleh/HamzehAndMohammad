@@ -32,7 +32,7 @@ Feature: LogIn
       | "hamzeh" |     "hhh"| 
       | "mohammad" |     "123"|
       | "haya" |     "haya"|
-   
+    | "test" |     "test"|
       
       @tag2
       Scenario Outline: Admin has the wrong password

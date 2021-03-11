@@ -29,11 +29,8 @@ public class LoginSteps {
 	
 	@Given("I have the username {string}")
 	public void i_have_the_username(String username) {
-	  
-		//user=  log.inputUser(username);  
 		
 		user = username ;
-		System.out.println("+++ " +user);
 		admin.setUser_name(username);
 	}
 
@@ -42,10 +39,8 @@ public class LoginSteps {
 	
 	@Given("I have the password {string}")
 	public void i_have_the_password(String password) {
-	  
-		//pass= log.inputPass(password);
+
 		pass = password ;
-		System.out.println("+++ " +pass);
 		admin.setPassword(password);
 	}
 
@@ -64,18 +59,13 @@ public class LoginSteps {
 	
 	}
 	
-	//////////////////////
+
 	
 	
 
 @Given("I have the username but i have a wrong password")
 public void i_have_the_username_but_i_have_a_wrong_password() {
-   
-	//System.out.print("please enter the pass: ");
-	//Scanner scanner = new Scanner(System.in);
-	//s = scanner.nextLine() ;
-	
-	// log.inputPass(s);
+
 }
 
 @When("I check if the password {string} is wrong")
