@@ -7,7 +7,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin= {"html: target/cucumber.html"}, features = "use_cases/SearchBook.feature" , 
+@CucumberOptions(plugin= {"html: target/cucumber.html"}, features = "use_cases" , 
 glue= "firstPartTest" , strict = true)
 
 

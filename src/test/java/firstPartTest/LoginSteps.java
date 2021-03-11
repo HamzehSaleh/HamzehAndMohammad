@@ -49,9 +49,6 @@ public class LoginSteps {
 		admin.setPassword(password);
 	}
 
-	String []user_n = {"hamzeh","mohammad","haya"};
-	String []pass_n = {"hhh","123","haya"};
-	
 	
 	@When("I check if the user name and password are correct")
 	public void i_check_if_the_user_name_and_password_are_correct() {
