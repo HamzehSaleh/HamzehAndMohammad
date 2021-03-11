@@ -1,4 +1,4 @@
-package firstPartTest;
+package firstPart;
 
 public class bookClass {
 	String title ;

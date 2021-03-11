@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import firstPart.AppClass;
+import firstPart.AdminInfo ;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -66,7 +67,7 @@ public class LoginSteps {
 	
 	@Then("I have logged in")
 	public void i_have_logged_in() {
-	//log.checkout();
+	log.checkout();
 	
 	}
 	

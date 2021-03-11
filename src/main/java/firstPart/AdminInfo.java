@@ -1,4 +1,4 @@
-package firstPartTest;
+package firstPart;
 
 public class AdminInfo {
 	String user_name ;
