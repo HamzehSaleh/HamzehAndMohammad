@@ -12,9 +12,9 @@ public class SearchBookSteps {
 	
 	ArrayList<bookClass> bookArray = new ArrayList<bookClass>(); 
 	
-	bookClass Book1 = new bookClass("Data" , "Mohammad" , "10" , "12345") ;
-	bookClass Book2 = new bookClass("Algo" , "hamzeh" , "11" , "12346") ;
-	bookClass Book3 = new bookClass("C++" , "haya" , "12" , "12347") ;
+	bookClass Book1 = new bookClass("Data Smart" ,"John W. Foreman" , "John2013" , "111866146X") ;
+	bookClass Book2 = new bookClass("Software Engineering at Google" , "Tom Manshreck" , "Tom2020" , "1492082791") ;
+	bookClass Book3 = new bookClass("C++ Primer" , " Stanley Lippman" , "Stanley2012" , "9780321714114") ;
 	
 	public SearchBookSteps() {
 		   bookArray.add(Book1) ;
@@ -126,7 +126,6 @@ public class SearchBookSteps {
 	@When("he entered the any info as {string}")
 	public void he_entered_the_any_info_as(String string) {
 
-		System.out.println(" any info with display : ");
 		
 		
 		for (int i=0 ;i<bookArray.size() ;i++)
@@ -162,8 +161,6 @@ public class SearchBookSteps {
 	@When("he entered the any info to search and nothing to show as {string}")
 	public void he_entered_the_any_info_to_search_and_nothing_to_show_as(String string) {
 	    
-		
-System.out.println(" any info and no match  : ");
 		
    boolean flag =true; 
    

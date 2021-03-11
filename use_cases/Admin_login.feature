@@ -29,10 +29,10 @@ Feature: LogIn
 
     Examples: 
       | username | password |
-      | "hamzeh" |     "hhh"| 
-      | "mohammad" |     "123"|
-      | "haya" |     "haya"|
-    | "test" |     "test"|
+      | "hamzeh" |     "111"| 
+      | "mohammad" |     "222"|
+      | "haya" |     "333"|
+ #   | "test" |     "test"|
       
       @tag2
       Scenario Outline: Admin has the wrong password
@@ -42,4 +42,5 @@ Feature: LogIn
     
       Examples: 
       | password |
-      |  "123" | 
+      |  "1234" | 
+      | "sdf" |

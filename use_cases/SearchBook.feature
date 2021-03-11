@@ -38,7 +38,7 @@ Given Not logged in and have the author for the book
  
   Examples: 
       | author |
-      | "hamz" |
+      | "Tom" |
       
       
       
@@ -51,7 +51,7 @@ Given Not logged in and have the isbn for the book
  
   Examples: 
       | isbn |
-      | "12347" |
+      | "9780321714114" |
       
       
        @tag4   
@@ -63,7 +63,7 @@ Given Admin with logged in and have any info for the book
  
   Examples: 
       | any_info_one_book |
-      | "12345" |
+      | "9780321714114" |
       
       
       
@@ -76,7 +76,7 @@ Given Admin with logged in and have any info for the book and no match
  
   Examples: 
       | any_info_no_match |
-      | "12348" |
+      | "Hamzeh" |
       
       
        @tag6   
@@ -88,9 +88,9 @@ Given Admin with logged in and have any info for  more than one  book
  
   Examples: 
       | any_info_many_books |
-      | "12345" |
-      | "Mohammad" |
-       | "Algo" |
+      | "John2013" |
+      | "Software Engineering at Google" |
+       | "C++ Primer" |
       
       
       

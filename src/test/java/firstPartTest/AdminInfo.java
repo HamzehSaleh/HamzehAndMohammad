@@ -4,6 +4,15 @@ public class AdminInfo {
 	String user_name ;
 	String password ;
 	
+	public AdminInfo() {
+		
+	}
+	
+	public AdminInfo(String user , String pass) {
+		this.user_name = user ;
+		this.password = pass ;
+	}
+	
 	public String getUser_name() {
 		return user_name;
 	}

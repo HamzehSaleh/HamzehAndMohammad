@@ -53,7 +53,7 @@ public class bookClass {
 	   // }
 	
 	public String toString() {
-		String s = "Book Info is: " + title + " , " + author  + " , "+ sign + " , " + isbn ;
+		String s = "Book Info is: \n " + "The Title: "  + title + " , " + "The Author: " + author  + " , "+ "The Signture: " + isbn ;
 		
 		return s ;
 	}

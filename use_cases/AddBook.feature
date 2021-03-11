@@ -31,8 +31,10 @@ Feature: Adding a new book
  
   Examples: 
       | title | author |  sign | isbn| 
-      | "Data" | "NoOne"| "10" |  "12345"| 
-     
+      | "Data Smart" | "John W. Foreman"| "John2013" |  "111866146X" | 
+      | "Software Engineering at Google"  | "Tom Manshreck" | "Tom2020"|  "1492082791" | 
+      | "C++ Primer" | " Stanley Lippman"| "Stanley2012"|  "9780321714114" | 
+ 
      
     @tag2
       Scenario: Add a book when the admin is not logged in 
