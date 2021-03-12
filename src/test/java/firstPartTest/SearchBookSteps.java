@@ -120,7 +120,7 @@ public class SearchBookSteps {
 	
 	@Given("Admin with logged in and have any info for the book")
 	public void admin_with_logged_in_and_have_any_info_for_the_book() {
-
+     System.out.println(" You Logged in , search as Admin now :) ");
 	}
 
 	@When("he entered the any info as {string}")

@@ -99,7 +99,7 @@ public void i_check_if_the_password_is_wrong(String passa) {
 
 @Then("Not valid information")
 public void not_valid_information() {
- System.out.println("not valid input");
+ System.out.println("not valid input (Wrong Password) ");
 }
 	
 }
