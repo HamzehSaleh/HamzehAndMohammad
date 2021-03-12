@@ -27,8 +27,13 @@ String user , pass ;
 	}
 	
 	public void checkout() {
-		System.out.println("Logged in");
+		System.out.println("Logged in (Valid Admin) ");
 	}
+	
+	public void add() {
+		System.out.println("Logged in (Valid Admin) you can add books now  ");
+	}
+	
 	
 	public void notvalid() {
 		
