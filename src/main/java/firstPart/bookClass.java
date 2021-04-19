@@ -10,7 +10,9 @@ public class bookClass {
 	  {
 		  
 	  }
-
+	
+	AdminInfo Admin = new AdminInfo() ;
+  
 
 		
 	  public bookClass(String title ,String author ,String sign ,String isbn )

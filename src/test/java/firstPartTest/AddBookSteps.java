@@ -21,7 +21,7 @@ public class AddBookSteps {
 	
 	@Given("Admin logged in and have the information for the book")
 	public void admin_logged_in_and_have_the_information_for_the_book() {
-	 
+	 log.add();
 		flag = true ;
 		assertTrue(log.islogIn(flag));
 		
@@ -62,6 +62,7 @@ public class AddBookSteps {
 	@Given("the admin is not logged in")
     public void the_admin_is_not_logged_in() {
 
+System.out.println(" Soory your not logged in , you can't add books") ;
 
     }
 

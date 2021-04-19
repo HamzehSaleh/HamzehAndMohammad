@@ -30,6 +30,22 @@
   
   </dependencies>
   
+  <build>
+	<sourceDirectory>src/main/java</sourceDirectory>
+	<testSourceDirectory>src/test/java</testSourceDirectory>
+	<pluginManagement>
+		<plugins>
+
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>8.8.0.42792</version>
+			</plugin>
+		</plugins>
+	</pluginManagement>
+
+</build>
+  
   
   
   
