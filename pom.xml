@@ -7,7 +7,6 @@
   
   <dependencies>
   
-  
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-java</artifactId>
@@ -29,6 +28,25 @@
 </dependency>
   
   </dependencies>
+  
+  <build>
+	<sourceDirectory>src/main/java</sourceDirectory>
+	<testSourceDirectory>src/test/java</testSourceDirectory>
+	<pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.7.0.1746</version>
+			</plugin>
+		</plugins>
+	</pluginManagement>
+</build>
+
+<properties>
+<maven.compiler.source>1.8</maven.compiler.source>
+<maven.compiler.target>1.8</maven.compiler.target>
+</properties>
   
   
     <build>

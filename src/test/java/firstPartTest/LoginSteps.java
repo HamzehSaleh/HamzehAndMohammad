@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
+import java.util.logging.*;
 import firstPart.AppClass;
 import firstPart.AdminInfo ;
 import io.cucumber.java.en.Given;
@@ -15,8 +15,7 @@ import io.cucumber.java.en.When;
 
 public class LoginSteps {
 	
-	//public String s1  ;
-	
+	//public String s1  ; 
 	public AppClass log;
 	public static String user , pass ;
 	
@@ -56,11 +55,11 @@ public class LoginSteps {
 	
 		int k=0 ;
 		   for(int i=0 ; i<adminArray.size() ; i++) {
-			   String temp = adminArray.get(i).getUser_name();
+			   String temp = adminArray.get(i).getUserName();
 			   if(temp.equalsIgnoreCase(user)) k = i ;
 		   }
 		   
-	assertTrue(adminArray.get(k).getUser_name().equalsIgnoreCase(user)) ;
+	assertTrue(adminArray.get(k).getUserName().equalsIgnoreCase(user)) ;
     assertTrue(adminArray.get(k).getPassword().equalsIgnoreCase(pass)) ;
 	 
 	}
