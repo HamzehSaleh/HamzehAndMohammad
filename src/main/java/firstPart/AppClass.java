@@ -6,8 +6,6 @@ import java.util.logging.Logger;
 
 public class AppClass {
 
-private String user ;
-private String pass ;
 private static final Logger logger = Logger.getLogger(AppClass.class.getName());
 	
 	public String inputUser(String str ) {
