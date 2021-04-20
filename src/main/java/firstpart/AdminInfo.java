@@ -1,4 +1,4 @@
-package firstPart;
+package firstpart;
 
 public class AdminInfo {
 	private String userName ;

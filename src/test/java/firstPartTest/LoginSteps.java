@@ -7,8 +7,9 @@ import static org.junit.Assert.assertTrue;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.logging.*;
-import firstPart.AppClass;
-import firstPart.AdminInfo ;
+
+import firstpart.AdminInfo;
+import firstpart.AppClass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

@@ -1,21 +1,21 @@
-package firstPart;
+package firstpart;
 
-public class bookClass {
+public class BookClass {
 	String title ;
 	String author ;
 	String sign ;
 	String isbn ;
 	
-	public bookClass()
+	public BookClass()
 	  {
 		  
 	  }
 	
-	AdminInfo Admin = new AdminInfo() ;
+	AdminInfo myAdmin = new AdminInfo() ;
   
 
 		
-	  public bookClass(String title ,String author ,String sign ,String isbn )
+	  public BookClass(String title ,String author ,String sign ,String isbn )
 	  {
 		  this.title=title ;
 		  this.author=author ;
@@ -54,8 +54,7 @@ public class bookClass {
  // this line for test 
 	
 	public String toString() {
-		String s = "Book Info is: \n " + "The Title: "  + title + " , " + "The Author: " + author  + " , "+ "The Signture: " + isbn ;
 		
-		return s ;
+		return "Book Info is: \n " + "The Title: "  + title + " , " + "The Author: " + author  + " , "+ "The Signture: " + isbn ;
 	}
 }

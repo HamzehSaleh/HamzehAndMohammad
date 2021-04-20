@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="firstPart.AppClass" project="firstPart" 
-    file="/firstPart/src/main/java/firstPart/AppClass.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="1" language="java" name="firstpart.AppClass" project="firstPart" 
+    file="/firstPart/src/main/java/firstpart/AppClass.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="426" y="238"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -10,8 +10,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="firstPart.bookClass" project="firstPart" 
-    file="/firstPart/src/main/java/firstPart/bookClass.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="2" language="java" name="firstpart.BookClass" project="firstPart" 
+    file="/firstPart/src/main/java/firstpart/BookClass.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="340" width="243" x="626" y="110"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -19,8 +19,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="firstPart.AdminInfo" project="firstPart" 
-    file="/firstPart/src/main/java/firstPart/AdminInfo.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="3" language="java" name="firstpart.AdminInfo" project="firstPart" 
+    file="/firstPart/src/main/java/firstpart/AdminInfo.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1160" y="252"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -30,8 +30,12 @@
   </class>  
   <association id="4">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="5" name="Admin"/>      
-      <multiplicity id="6" minimum="0" maximum="1"/>    
+      <attribute id="5" name="Admin">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="6" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  

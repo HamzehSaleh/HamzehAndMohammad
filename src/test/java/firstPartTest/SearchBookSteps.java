@@ -3,18 +3,19 @@ package firstPartTest;
 import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
-import firstPart.bookClass ;
+
+import firstpart.BookClass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class SearchBookSteps {
 	
-	ArrayList<bookClass> bookArray = new ArrayList<bookClass>(); 
+	ArrayList<BookClass> bookArray = new ArrayList<BookClass>(); 
 	
-	bookClass Book1 = new bookClass("Data Smart" ,"John W. Foreman" , "John2013" , "111866146X") ;
-	bookClass Book2 = new bookClass("Software Engineering at Google" , "Tom Manshreck" , "Tom2020" , "1492082791") ;
-	bookClass Book3 = new bookClass("C++ Primer" , " Stanley Lippman" , "Stanley2012" , "9780321714114") ;
+	BookClass Book1 = new BookClass("Data Smart" ,"John W. Foreman" , "John2013" , "111866146X") ;
+	BookClass Book2 = new BookClass("Software Engineering at Google" , "Tom Manshreck" , "Tom2020" , "1492082791") ;
+	BookClass Book3 = new BookClass("C++ Primer" , " Stanley Lippman" , "Stanley2012" , "9780321714114") ;
 	
 	public SearchBookSteps() {
 		   bookArray.add(Book1) ;

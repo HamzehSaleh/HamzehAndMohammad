@@ -1,4 +1,4 @@
-package firstPart;
+package firstpart;
 
 import java.util.Scanner;
 import java.util.logging.Level;
@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 
 public class AppClass {
 
-	private String pass ;
+	 String pass ;
 	
 private static final Logger logger = Logger.getLogger(AppClass.class.getName());
 	

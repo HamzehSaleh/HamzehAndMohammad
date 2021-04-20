@@ -5,16 +5,16 @@ import static org.junit.Assert.assertTrue;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import firstPart.AppClass;
-import firstPart.bookClass ;
+import firstpart.AppClass;
+import firstpart.BookClass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class AddBookSteps {
 	
-	ArrayList<bookClass> bookArray = new ArrayList<bookClass>(); 
-	bookClass newBook = new bookClass();
+	ArrayList<BookClass> bookArray = new ArrayList<BookClass>(); 
+	BookClass newBook = new BookClass();
 	AppClass log = new AppClass() ;
 	boolean flag = false ;
 
