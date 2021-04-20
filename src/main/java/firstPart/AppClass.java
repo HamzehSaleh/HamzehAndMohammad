@@ -1,47 +1,45 @@
 package firstPart;
 
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 public class AppClass {
 
-String user , pass ;
+private String user ;
+private String pass ;
+private static final Logger logger = Logger.getLogger(AppClass.class.getName());
 	
-	public String inputUser(String s1 ) {
+	public String inputUser(String str ) {
 	
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("please enter your username: ");
-	    s1 = scanner.nextLine() ;
-	    
-		
-	   // user = s1 ;
-	    return s1 ;
+		logger.log(null, "please enter your username: ");
+	    str = scanner.nextLine() ;
+	    return str ;
 	    
 	}
 	
-	public String inputPass(String s2) {
+	public String inputPass(String str) {
 		Scanner scanner = new Scanner(System.in);
-		 System.out.print("please enter your password: ");
-		    s2 = scanner.nextLine();
-		    pass = s2 ;
-		    return s2 ;
+		logger.log(null , "please enter your password: ");
+		    str = scanner.nextLine();
+		    pass = str;
+		    return str ;
 	}
 	
 	public void checkout() {
-		System.out.println("Logged in (Valid Admin) ");
+		logger.log(null ,"Logged in (Valid Admin)" );
 	}
 	
 	public void add() {
-		System.out.println("Logged in (Valid Admin) you can add books now  ");
+		logger.log(null,"Logged in (Valid Admin) you can add books now ");
 	}
 	
 	
-	public void notvalid() {
-		
-		System.out.println("not valid password");
+	public void notvalid(){
+		logger.log(null,"not valid password");
 	}
 	
 	public boolean islogIn(boolean log ){
-		 
 		return log ;
 	}
 	
