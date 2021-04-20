@@ -49,11 +49,7 @@ public class bookClass {
 		this.isbn = isbn;
 	}
 	
-	   //public void ArrayFill(bookClass book , ArrayList<bookClass> bookArray)
-	 //  {
-	    //	bookArray.add(book);
-	   // }
-	
+	 
 	public String toString() {
 		String s = "Book Info is: \n " + "The Title: "  + title + " , " + "The Author: " + author  + " , "+ "The Signture: " + isbn ;
 		
