@@ -1,23 +1,23 @@
 package firstPart;
 
 public class AdminInfo {
-	String user_name ;
-	String password ;
+	private String userName ;
+	private String password ;
 	
 	public AdminInfo() {
 		
 	}
 	
 	public AdminInfo(String user , String pass) {
-		this.user_name = user ;
+		this.userName = user ;
 		this.password = pass ;
 	}
 	
-	public String getUser_name() {
-		return user_name;
+	public String getUserName() {
+		return userName;
 	}
-	public void setUser_name(String user_name) {
-		this.user_name = user_name;
+	public void setUserName(String user_name) {
+		this.userName = user_name;
 	}
 	public String getPassword() {
 		return password;
