@@ -16,8 +16,8 @@ public class AdminInfo {
 	public String getUserName() {
 		return userName;
 	}
-	public void setUserName(String user_name) {
-		this.userName = user_name;
+	public void setUserName(String userN) {
+		this.userName = userN;
 	}
 	public String getPassword() {
 		return password;
