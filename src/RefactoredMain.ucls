@@ -1,42 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="firstPartTest.Test" project="firstPart" 
-    file="/firstPart/src/test/java/firstPartTest/Test.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1436" y="479"/>    
+  <class id="1" language="java" name="firstpart.AdminInfo" project="firstPart" 
+    file="/firstPart/src/main/java/firstpart/AdminInfo.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="178" width="163" x="197" y="129"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="firstPartTest.SearchBookSteps" project="firstPart" 
-    file="/firstPart/src/test/java/firstPartTest/SearchBookSteps.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="468" y="310"/>    
+  <class id="2" language="java" name="firstpart.AppClass" project="firstPart" 
+    file="/firstPart/src/main/java/firstpart/AppClass.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="577" y="169"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="firstPartTest.LoginSteps" project="firstPart" 
-    file="/firstPart/src/test/java/firstPartTest/LoginSteps.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="999" y="584"/>    
+  <class id="3" language="java" name="firstpart.BookClass" project="firstPart" 
+    file="/firstPart/src/main/java/firstpart/BookClass.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="358" width="245" x="443" y="327"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="firstPartTest.LogoutSteps" project="firstPart" 
-    file="/firstPart/src/test/java/firstPartTest/LogoutSteps.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1390" y="290"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
+  <association id="4">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="5" name="myAdmin"/>      
+      <multiplicity id="6" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
