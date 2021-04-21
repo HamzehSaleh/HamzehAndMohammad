@@ -14,6 +14,7 @@ public class BookClass {
 	AdminInfo myAdmin = new AdminInfo() ;
   
 
+		
 	  public BookClass(String title ,String author ,String sign ,String isbn )
 	  {
 		  this.title=title ;
@@ -48,7 +49,19 @@ public class BookClass {
 		this.isbn = isbn;
 	}
 	
-
+	public int sumOfIsbn(String isbn, int counter, int sum) {
+		int mult;
+		for (int i=0 ; i<10 ; i++ ) {
+			mult = isbn.charAt(i) * counter ;
+			sum += mult ; 
+			counter -- ;
+		}
+		return sum;
+	}
+	
+	 
+	
+ // this line for test 
 	
 	public String toString() {
 		

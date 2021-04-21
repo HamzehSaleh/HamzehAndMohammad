@@ -18,22 +18,17 @@ public class LoginSteps {
 	
 	private static final Logger logger = Logger.getLogger(LoginSteps.class.getName());
 	
-	//public String s1  ; 
-	public AppClass log;
 	public static String user , pass ;
 	public static int index ;
 	
-	ArrayList <AdminInfo> adminArray = new ArrayList <AdminInfo>() ; 
+	public LoginStepsData AdminData = new LoginStepsData(new ArrayList <AdminInfo>(), new AdminInfo("hamzeh" , "111"),
+			new AdminInfo("Mohammad" , "222"), new AdminInfo("haya" , "333"));
 
-	AdminInfo admin1 = new AdminInfo("hamzeh" , "111");
-	AdminInfo admin2 = new AdminInfo("Mohammad" , "222");
-	AdminInfo admin3 = new AdminInfo("haya" , "333");
-	
 	public LoginSteps(AppClass log2) {
-	log = log2 ;
-	adminArray.add(admin1);
-	adminArray.add(admin2);
-	adminArray.add(admin3);
+	AdminData.log = log2 ;
+	AdminData.adminArray.add(AdminData.admin1);
+	AdminData.adminArray.add(AdminData.admin2);
+	AdminData.adminArray.add(AdminData.admin3);
 }
 
 
@@ -57,8 +52,8 @@ public class LoginSteps {
 	@When("I check if the user name and password are correct")
 	public void i_check_if_the_user_name_and_password_are_correct() {
 	
-		   for(int i=0 ; i<adminArray.size() ; i++) {
-			   String temp = adminArray.get(i).getUserName();
+		   for(int i=0 ; i<AdminData.adminArray.size() ; i++) {
+			   String temp = AdminData.adminArray.get(i).getUserName();
 			   if(temp.equalsIgnoreCase(user)) index = i ;
 		   }
 		   
@@ -68,9 +63,9 @@ public class LoginSteps {
 	
 	@Then("I have logged in")
 	public void i_have_logged_in() {
-	log.checkout();
-	assertTrue(adminArray.get(index).getUserName().equalsIgnoreCase(user)) ;
-    assertTrue(adminArray.get(index).getPassword().equalsIgnoreCase(pass)) ;
+	AdminData.log.checkout();
+	assertTrue(AdminData.adminArray.get(index).getUserName().equalsIgnoreCase(user)) ;
+    assertTrue(AdminData.adminArray.get(index).getPassword().equalsIgnoreCase(pass)) ;
 	
 	}
 	
@@ -88,8 +83,8 @@ public void i_check_if_the_password_is_wrong(String passa) {
 	
 	boolean f = true ;
 	
-	   for(int i=0 ; i<adminArray.size() ; i++) {
-	   String temp = adminArray.get(i).getPassword();
+	   for(int i=0 ; i<AdminData.adminArray.size() ; i++) {
+	   String temp = AdminData.adminArray.get(i).getPassword();
 	   if(temp.equalsIgnoreCase(passa)) f = false ;
    }
    

@@ -48,12 +48,18 @@ public class AddBookSteps {
 	}
 
 	@When("he entered the isbn {string}")
-	public void he_entered_the_isbn(String isbn) {	  
-		newBook.setIsbn(isbn);
+	public void he_entered_the_isbn(String isbn) {	
+	    	
+		if(newBook.sumOfIsbn(isbn, 10 , 0) % 11 == 0) {
+			newBook.setIsbn(isbn);
+		}
+		
 	}
+
 
 	@Then("the book is added")
 	public void the_book_is_added() {
+		
 	  
 		newBook.toString();
 		bookArray.add(newBook);

@@ -31,9 +31,9 @@ Feature: Adding a new book
  
   Examples: 
       | title | author |  sign | isbn| 
-      | "Data Smart" | "John W. Foreman"| "John2013" |  "111866146X" | 
-      | "Software Engineering at Google"  | "Tom Manshreck" | "Tom2020"|  "1492082791" | 
-      | "C++ Primer" | " Stanley Lippman"| "Stanley2012"|  "9780321714114" | 
+      | "Data Smart" | "John W. Foreman"| "John2013" |  "1118661462" | 
+      | "Software Engineering at Google"  | "Tom Manshreck" | "Tom2020"|  "1492089271" | 
+      | "C++ Primer" | " Stanley Lippman"| "Stanley2012"|  "0140449116" | 
  
      
     @tag2

@@ -16,15 +16,11 @@ public class AdminInfo {
 	public String getUserName() {
 		return userName;
 	}
-	public void setUserName(String userN) {
-		this.userName = userN;
-	}
+
 	public String getPassword() {
 		return password;
 	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
+
 	
 	
 
