@@ -10,7 +10,6 @@ public class AppClass {
 	
 private static final Logger logger = Logger.getLogger(AppClass.class.getName());
 	
-
 	
 	public void checkout() {
 		logger.log(Level.INFO ,"Logged in (Valid Admin)" );
