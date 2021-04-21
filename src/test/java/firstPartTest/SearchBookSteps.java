@@ -3,6 +3,8 @@ package firstPartTest;
 import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import firstpart.BookClass;
 import io.cucumber.java.en.Given;
@@ -10,8 +12,10 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class SearchBookSteps {
+	private static final Logger logger = Logger.getLogger(SearchBookSteps.class.getName());
 	
 	ArrayList<BookClass> bookArray = new ArrayList<BookClass>(); 
+
 	
 	BookClass Book1 = new BookClass("Data Smart" ,"John W. Foreman" , "John2013" , "111866146X") ;
 	BookClass Book2 = new BookClass("Software Engineering at Google" , "Tom Manshreck" , "Tom2020" , "1492082791") ;
@@ -44,7 +48,6 @@ public class SearchBookSteps {
 		   assertTrue(true) ;
 	   }
 	  
-	 //  assertTrue(tit.equalsIgnoreCase(bookArray.get(k).getTitle())) ;
 	}
 
 	@Then("the book info will display by title")
@@ -121,7 +124,7 @@ public class SearchBookSteps {
 	
 	@Given("Admin with logged in and have any info for the book")
 	public void admin_with_logged_in_and_have_any_info_for_the_book() {
-     System.out.println(" You Logged in , search as Admin now :) ");
+     logger.log(Level.INFO , "You Logged in , search as Admin now :) ");
 	}
 
 	@When("he entered the any info as {string}")
@@ -140,7 +143,7 @@ public class SearchBookSteps {
 			}
 		}
 		
-		
+	
 	}
 
 	@Then("the book info will display by any info")

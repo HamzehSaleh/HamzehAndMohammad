@@ -14,7 +14,6 @@ public class BookClass {
 	AdminInfo myAdmin = new AdminInfo() ;
   
 
-		
 	  public BookClass(String title ,String author ,String sign ,String isbn )
 	  {
 		  this.title=title ;
@@ -49,9 +48,7 @@ public class BookClass {
 		this.isbn = isbn;
 	}
 	
-	 
-	
- // this line for test 
+
 	
 	public String toString() {
 		

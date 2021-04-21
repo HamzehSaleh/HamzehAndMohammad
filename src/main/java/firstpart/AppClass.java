@@ -12,18 +12,18 @@ private static final Logger logger = Logger.getLogger(AppClass.class.getName());
 	
 	public String inputUser(String str ) {
 	
-		Scanner scanner = new Scanner(System.in);
+	Scanner scanner = new Scanner(System.in);
 		logger.log(Level.INFO , "please enter your username: ");
-	    str = scanner.nextLine() ;
-	    return str ;
+   str = scanner.nextLine() ;
+    return str ;
 	    
 	}
 	
 	public String inputPass(String str) {
-		Scanner scanner = new Scanner(System.in);
+	Scanner scanner = new Scanner(System.in);
 		logger.log(Level.INFO  , "please enter your password: ");
-		    str = scanner.nextLine();
-		    pass = str;
+	    str = scanner.nextLine();
+	    pass = str;
 		    return str ;
 	}
 	
@@ -38,7 +38,7 @@ private static final Logger logger = Logger.getLogger(AppClass.class.getName());
 	
 	public void notvalid(){
 		logger.log(Level.INFO ,"not valid password");
-	}
+		}
 	
 	public boolean islogIn(boolean log ){
 		return log ;

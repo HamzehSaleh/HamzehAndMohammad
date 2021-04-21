@@ -4,6 +4,8 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import firstpart.AppClass;
 import firstpart.BookClass;
@@ -12,6 +14,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class AddBookSteps {
+	private static final Logger logger = Logger.getLogger(AddBookSteps.class.getName());
 	
 	ArrayList<BookClass> bookArray = new ArrayList<BookClass>(); 
 	BookClass newBook = new BookClass();
@@ -23,8 +26,7 @@ public class AddBookSteps {
 	public void admin_logged_in_and_have_the_information_for_the_book() {
 	 log.add();
 		flag = true ;
-		assertTrue(log.islogIn(flag));
-		
+
 	}
 
 	@When("he entered the title {string}" )
@@ -55,14 +57,16 @@ public class AddBookSteps {
 	  
 		newBook.toString();
 		bookArray.add(newBook);
-	
-		System.out.println("the book added");
+		
+		assertTrue(log.islogIn(flag));
+
+		logger.log(Level.INFO , "the book added");
 	}
+	
 	
 	@Given("the admin is not logged in")
     public void the_admin_is_not_logged_in() {
-
-System.out.println(" Soory your not logged in , you can't add books") ;
+		logger.log(Level.INFO , "Soorry your not logged in , you can't add books");
 
     }
 
@@ -70,13 +74,11 @@ System.out.println(" Soory your not logged in , you can't add books") ;
     public void the_admin_try_to_add_book() {
    
     	
-
     }
 
     @Then("book does not added")
     public void book_does_not_added() {
-        // Write code here that turns the phrase above into concrete actions
-       System.out.println("you can't add Books when you are not logged in ");
+    	logger.log(Level.INFO , "you can't add Books when you are not logged in");
 	
 }
 }

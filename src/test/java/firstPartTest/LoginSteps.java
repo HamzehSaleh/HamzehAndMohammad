@@ -16,9 +16,12 @@ import io.cucumber.java.en.When;
 
 public class LoginSteps {
 	
+	private static final Logger logger = Logger.getLogger(LoginSteps.class.getName());
+	
 	//public String s1  ; 
 	public AppClass log;
 	public static String user , pass ;
+	public static int index ;
 	
 	ArrayList <AdminInfo> adminArray = new ArrayList <AdminInfo>() ; 
 
@@ -54,20 +57,20 @@ public class LoginSteps {
 	@When("I check if the user name and password are correct")
 	public void i_check_if_the_user_name_and_password_are_correct() {
 	
-		int k=0 ;
 		   for(int i=0 ; i<adminArray.size() ; i++) {
 			   String temp = adminArray.get(i).getUserName();
-			   if(temp.equalsIgnoreCase(user)) k = i ;
+			   if(temp.equalsIgnoreCase(user)) index = i ;
 		   }
 		   
-	assertTrue(adminArray.get(k).getUserName().equalsIgnoreCase(user)) ;
-    assertTrue(adminArray.get(k).getPassword().equalsIgnoreCase(pass)) ;
+
 	 
 	}
 	
 	@Then("I have logged in")
 	public void i_have_logged_in() {
 	log.checkout();
+	assertTrue(adminArray.get(index).getUserName().equalsIgnoreCase(user)) ;
+    assertTrue(adminArray.get(index).getPassword().equalsIgnoreCase(pass)) ;
 	
 	}
 	
@@ -99,7 +102,7 @@ public void i_check_if_the_password_is_wrong(String passa) {
 
 @Then("Not valid information")
 public void not_valid_information() {
- System.out.println("not valid input (Wrong Password) ");
+	logger.log(Level.INFO , "not valid input (Wrong Password)");
 }
 	
 }
