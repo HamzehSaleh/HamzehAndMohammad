@@ -19,12 +19,12 @@ private static final Logger logger = Logger.getLogger(AppClass.class.getName());
 	    
 	}
 	
-	public String inputPass(String str) {
+	public String inputPass(String strString) {
 	Scanner scanner = new Scanner(System.in);
 		logger.log(Level.INFO  , "please enter your password: ");
-	    str = scanner.nextLine();
-	    pass = str;
-		    return str ;
+	    strString = scanner.nextLine();
+	    pass = strString;
+		    return strString ;
 	}
 	
 	public void checkout() {
